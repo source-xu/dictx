@@ -6,6 +6,7 @@
 最可自定义增加、修改、删除规则
 
 **usage: `python dicx.py`**
+
 ![image](https://user-images.githubusercontent.com/56073532/201604834-14a497a8-d3da-463d-9dd5-7b082ca24952.png)
 
 
@@ -23,5 +24,3 @@
 【2】 常规模式(556条):结合关键词进行字典生成，字典较为精简高效如:test@2018
 
 【3】 全面模式(1701条):结合关键词进行字典生成，支持复杂得规则如Test@123.
-
-![image](https://user-images.githubusercontent.com/56073532/201605001-7a90a17c-2842-4efe-a866-7e69ef520103.png)
