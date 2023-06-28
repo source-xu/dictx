@@ -141,7 +141,7 @@ exe直接运行即可
 
   
 - 【4】 多用户名模式  
-  input:[users.txt](https://github.com/source-xu/dictx/files/11888881/users.txt)
+  input: [users.txt](https://github.com/source-xu/dictx/files/11888881/users.txt)
 
-  output:[process_usernames.txt](https://github.com/source-xu/dictx/files/11888886/process_usernames.txt)
+  output: [process_usernames.txt](https://github.com/source-xu/dictx/files/11888886/process_usernames.txt)  
          [process_passwords.txt](https://github.com/source-xu/dictx/files/11888889/process_passwords.txt)
