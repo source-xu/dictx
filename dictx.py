@@ -29,7 +29,7 @@ weak_num = ["",
             "112233", "520", "1314"]
 
 # 常见弱口令后缀，如：damin123、admin@123、admin888
-num_suffix = ["123", "1234", "1314", "12345", "123456", "1234567", "123456789",
+num_suffix = ["123", "1234", "1314", "12345", "123456", "123456.", "1234567", "123456789",
               "456789", "88", "888", "8888", "999999", "666", "111", "000"]
 
 # 网址后缀
@@ -47,7 +47,7 @@ weak_pass = ["admin", "test", "guest", "root", "pass", "NULL", "druid", "user", 
              "system"]
 
 # 强口令
-strong_passwd = ["admin123", "admin@123", "admin.123", "admin#123", "admin@123", "admin888", "admin12345", "admin111",
+strong_passwd = ["admin123", "admin@123", "admin.123", "admin#123", "admin@123", "admin888","Admin888s.", "admin12345", "admin111",
                  "adminadmin", "admintest", "administrator", "Admin@123", "admin@1234", "Admin@1234",
 
                  "root123", "root@123", "ceshi123", "ceshi@123", "test123", "test@123", "Test@123",
@@ -190,7 +190,7 @@ if __name__ == '__main__':
         dicts = weak()
         dicts = take_out_repeat(dicts)
         dicts = sorted(dicts, key=lambda i: len(i), reverse=False)
-        print(len(dicts))
+        print(f"[+] 成功生成共计{len(dicts)}条密码！！请查看！")
         with open(path + "\\" + 'default.txt', 'w') as f:
             for i in dicts:
                 f.write(i + '\n')
@@ -200,7 +200,7 @@ if __name__ == '__main__':
         dicts = regular(keyword)
         dicts = take_out_repeat(dicts)
         dicts = sorted(dicts, key=lambda i: len(i), reverse=False)
-        print(len(dicts))
+        print(f"[+] 成功生成共计{len(dicts)}条密码！！请查看！")
         with open(path + "\\" + keyword + '.txt', 'w') as f:
             for i in dicts:
                 f.write(i + '\n')
@@ -210,7 +210,7 @@ if __name__ == '__main__':
         dicts = single_user(keyword)
         dicts = take_out_repeat(dicts)
         dicts = sorted(dicts, key=lambda i: len(i), reverse=False)
-        print(len(dicts))
+        print(f"[+] 成功生成共计{len(dicts)}条密码！！请查看！")
         with open(path + "\\" + keyword + '.txt', 'w') as f:
             for i in dicts:
                 f.write(i + '\n')
@@ -235,5 +235,4 @@ if __name__ == '__main__':
             for i in passwords:
                 fp.write(i + '\n')
         fp.close()
-    print(f"[+] 成功为{len(set(users))}个用户名生成共计{len(passwords)}条密码！！请查看！")
-#
+        print(f"[+] 成功为{len(set(users))}个用户名生成共计{len(passwords)}条密码！！请查看！")
